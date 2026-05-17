@@ -88,15 +88,35 @@
             background: rgba(255, 255, 255, 0.95);
             box-shadow: 0 1px 10px rgba(0,0,0,0.05);
         }
+
+        /* 顶部居中访问统计 */
+        .visit-top-center{
+            position: fixed;
+            top: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+            font-size: 11px;
+            color:#999;
+            letter-spacing:1px;
+        }
     </style>
 </head>
 <body>
+
+    <!-- 顶部居中访问量 -->
+    <div class="visit-top-center">
+        <span id="busuanzi_container_site_pv">
+            本站访问量 · <span id="busuanzi_value_site_pv" class="gradient-text font-semibold"></span> 次
+        </span>
+    </div>
+
     <!-- 导航 -->
     <nav class="fixed w-full z-50 nav-blur border-b border-gray-50" id="navbar">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="serif font-semibold text-lg tracking-widest gradient-text">梦之音官网</div>
             <div class="flex items-center gap-8 text-xs tracking-widest uppercase">
-                <a href="https://blog.csdn.net" target="_blank" class="hover:text-blue-500 transition duration-300 relative group">
+                <a href="https://blog.csdn.net/2601_96095812?spm=1010.2135.3001.5343" target="_blank" class="hover:text-blue-500 transition duration-300 relative group">
                     CSDN
                     <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
                 </a>
@@ -258,7 +278,7 @@
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
             </a>
             <a href="#" class="hover:text-black transition duration-300 relative group">
-                Email
+                联系邮箱
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
             </a>
         </div>
@@ -284,5 +304,8 @@
             });
         });
     </script>
+
+    <!-- 访问统计 -->
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
 </html>
