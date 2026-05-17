@@ -100,6 +100,13 @@
             color:#999;
             letter-spacing:1px;
         }
+
+        /* 全局左右自适应留白 */
+        @media (max-width: 640px){
+            .project-card{
+                padding:2.5rem !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -113,29 +120,29 @@
 
     <!-- 导航 -->
     <nav class="fixed w-full z-50 nav-blur border-b border-gray-50" id="navbar">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="serif font-semibold text-lg tracking-widest gradient-text">梦之音官网</div>
-            <div class="flex items-center gap-8 text-xs tracking-widest uppercase">
+        <div class="w-full px-4 md:px-6 py-4 flex justify-between items-center">
+            <div class="serif font-semibold text-sm md:text-lg tracking-widest gradient-text">梦之音官网</div>
+            <div class="flex items-center gap-3 md:gap-6 text-[10px] md:text-xs tracking-widest uppercase">
                 <a href="https://blog.csdn.net/2601_96095812?spm=1010.2135.3001.5343" target="_blank" class="hover:text-blue-500 transition duration-300 relative group">
                     CSDN
                     <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="https://qm.qq.com/q/bUQdkkXL8I" target="_blank" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 hover:shadow-lg hover:shadow-blue-500/20 transition duration-300 transform hover:scale-105">加入群聊</a>
+                <a href="https://qm.qq.com/q/bUQdkkXL8I" target="_blank" class="bg-black text-white px-3 py-1.5 md:px-4 md:py-2 rounded-full hover:bg-gray-800 hover:shadow-lg hover:shadow-blue-500/20 transition duration-300 transform hover:scale-105">加入群聊</a>
             </div>
         </div>
     </nav>
 
     <!-- 主视觉区 -->
-    <section class="pt-40 pb-24 px-6 text-center fade-in">
-        <div class="max-w-4xl mx-auto">
+    <section class="pt-32 md:pt-40 pb-20 md:pb-24 px-4 md:px-6 text-center fade-in">
+        <div class="w-full max-w-4xl mx-auto">
             <span class="text-[10px] tracking-[0.6em] text-gray-400 uppercase mb-6 block">Beyond the Moon</span>
-            <h1 class="serif text-4xl md:text-6xl font-light leading-tight mb-8">
-                梦之音 <span class="text-gray-300 mx-2">/</span> <span class="gradient-text">梦之城</span>
+            <h1 class="serif text-3xl md:text-5xl lg:text-6xl font-light leading-tight mb-6 md:mb-8">
+                梦之音 <span class="text-gray-300 mx-1 md:mx-2">/</span> <span class="gradient-text">梦之城</span>
             </h1>
-            <p class="text-gray-500 font-light tracking-wide text-sm md:text-base max-w-xl mx-auto leading-relaxed">
+            <p class="text-gray-500 font-light tracking-wide text-xs md:text-sm md:text-base w-full max-w-xl mx-auto leading-relaxed">
                 梦之音/梦之城表情站/软件/源码/表情包/壁纸/Clousx6词库/各大游戏攻略/编程开发<br>微信公众号:梦之音网络团队
             </p>
-            <div class="mt-12">
+            <div class="mt-10 md:mt-12">
                 <a href="#projects" class="inline-flex items-center gap-2 text-xs tracking-widest uppercase text-gray-400 hover:text-black transition duration-300">
                     查看项目
                     <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -146,18 +153,18 @@
         </div>
     </section>
 
-    <!-- 项目区域 已修复布局 -->
-    <section class="max-w-6xl mx-auto px-6 pb-32" id="projects">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- 项目区域 全适配 -->
+    <section class="w-full px-4 md:px-6 pb-20 md:pb-32" id="projects">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
 
             <!-- 1随机壁纸 -->
-            <a href="http://m.webcats.cn/bx/144856/72374" class="block project-card bg-gray-50/30 rounded-3xl p-10 hover:bg-gray-100/50 transition-all cursor-pointer group fade-in">
-                <div class="flex justify-between items-start mb-12">
+            <a href="http://m.webcats.cn/bx/144856/72374" class="block project-card bg-gray-50/30 rounded-3xl p-6 md:p-10 hover:bg-gray-100/50 transition-all cursor-pointer group fade-in">
+                <div class="flex justify-between items-start mb-8 md:mb-12">
                     <span class="text-[10px] tracking-widest text-gray-400">01 / BIZHI</span>
                     <div class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
                 </div>
-                <h3 class="serif text-2xl mb-4 group-hover:text-blue-600 transition-colors duration-300">随机壁纸</h3>
-                <p class="text-gray-400 text-sm leading-relaxed mb-8">随机二次元动漫壁纸（点击跳转）</p>
+                <h3 class="serif text-xl md:text-2xl mb-3 md:mb-4 group-hover:text-blue-600 transition-colors duration-300">随机壁纸</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 md:mb-8">随机二次元动漫壁纸（点击跳转）</p>
                 <div class="flex gap-3">
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">壁纸</span>
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">二次元</span>
@@ -165,13 +172,13 @@
             </a>
 
             <!-- 2壁纸合集 -->
-            <a href="https://1847225514.share.123865.com/123pan/5S7Tvd-LVOwh" class="block project-card bg-gray-50/30 rounded-3xl p-10 hover:bg-gray-100/50 transition-all cursor-pointer group fade-in">
-                <div class="flex justify-between items-start mb-12">
+            <a href="https://1847225514.share.123865.com/123pan/5S7Tvd-LVOwh" class="block project-card bg-gray-50/30 rounded-3xl p-6 md:p-10 hover:bg-gray-100/50 transition-all cursor-pointer group fade-in">
+                <div class="flex justify-between items-start mb-8 md:mb-12">
                     <span class="text-[10px] tracking-widest text-gray-400">02 / BIZHIHEJI</span>
                     <div class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
                 </div>
-                <h3 class="serif text-2xl mb-4 group-hover:text-blue-600 transition-colors duration-300">壁纸合集</h3>
-                <p class="text-gray-400 text-sm leading-relaxed mb-8">壁纸合集（点击跳转）</p>
+                <h3 class="serif text-xl md:text-2xl mb-3 md:mb-4 group-hover:text-blue-600 transition-colors duration-300">壁纸合集</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 md:mb-8">壁纸合集（点击跳转）</p>
                 <div class="flex gap-3">
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">壁纸</span>
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">合集</span>
@@ -179,13 +186,13 @@
             </a>
 
             <!-- 3头像合集 -->
-            <a href="https://1847225514.share.123865.com/123pan/5S7Tvd-BwIwh" class="block project-card bg-gray-50/30 rounded-3xl p-10 hover:bg-gray-100/50 transition-all cursor-pointer group fade-in">
-                <div class="flex justify-between items-start mb-12">
+            <a href="https://1847225514.share.123865.com/123pan/5S7Tvd-BwIwh" class="block project-card bg-gray-50/30 rounded-3xl p-6 md:p-10 hover:bg-gray-100/50 transition-all cursor-pointer group fade-in">
+                <div class="flex justify-between items-start mb-8 md:mb-12">
                     <span class="text-[10px] tracking-widest text-gray-400">03 / TOUXIANGHEJI</span>
                     <div class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
                 </div>
-                <h3 class="serif text-2xl mb-4 group-hover:text-blue-600 transition-colors duration-300">头像合集</h3>
-                <p class="text-gray-400 text-sm leading-relaxed mb-8">头像合集（点击跳转）</p>
+                <h3 class="serif text-xl md:text-2xl mb-3 md:mb-4 group-hover:text-blue-600 transition-colors duration-300">头像合集</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 md:mb-8">头像合集（点击跳转）</p>
                 <div class="flex gap-3">
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">头像</span>
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">合集</span>
@@ -193,14 +200,14 @@
             </a>
 
             <!-- 4软件合集 -->
-            <a href="https://1847225514.share.123865.com/123pan/5S7Tvd-JwIwh" class="block project-card bg-gray-50/30 rounded-3xl p-10 hover:bg-gray-100/50 transition-all cursor-pointer group fade-in">
-                <div class="flex justify-between items-start mb-12">
+            <a href="https://1847225514.share.123865.com/123pan/5S7Tvd-JwIwh" class="block project-card bg-gray-50/30 rounded-3xl p-6 md:p-10 hover:bg-gray-100/50 transition-all cursor-pointer group fade-in">
+                <div class="flex justify-between items-start mb-8 md:mb-12">
                     <span class="text-[10px] tracking-widest text-gray-400">04 / RUANJIANHEJI</span>
                     <div class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
                 </div>
-                <h3 class="serif text-2xl mb-4 group-hover:text-blue-600 transition-colors duration-300">软件合集</h3>
-                <p class="text-gray-400 text-sm leading-relaxed mb-8">实用软件合集（点击跳转）</p>
-                <div class="flex gap-3">
+                <h3 class="serif text-xl md:text-2xl mb-3 md:mb-4 group-hover:text-blue-600 transition-colors duration-300">软件合集</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 md:mb-8">实用软件合集（点击跳转）</p>
+                <div class="flex gap-3 flex-wrap">
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">软件</span>
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">实用软件</span>
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">合集</span>
@@ -208,13 +215,13 @@
             </a>
 
             <!-- 5留言 -->
-            <a href="http://dqx.tanwan.pro/" class="block project-card bg-gray-50/30 rounded-3xl p-10 hover:bg-gray-100/50 transition-all cursor-pointer group fade-in">
-                <div class="flex justify-between items-start mb-12">
+            <a href="http://dqx.tanwan.pro/" class="block project-card bg-gray-50/30 rounded-3xl p-6 md:p-10 hover:bg-gray-100/50 transition-all cursor-pointer group fade-in">
+                <div class="flex justify-between items-start mb-8 md:mb-12">
                     <span class="text-[10px] tracking-widest text-gray-400">05 / LIUYAN</span>
                     <div class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
                 </div>
-                <h3 class="serif text-2xl mb-4 group-hover:text-blue-600 transition-colors duration-300">留言</h3>
-                <p class="text-gray-400 text-sm leading-relaxed mb-8">留言功能（点击跳转）</p>
+                <h3 class="serif text-xl md:text-2xl mb-3 md:mb-4 group-hover:text-blue-600 transition-colors duration-300">留言</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 md:mb-8">留言功能（点击跳转）</p>
                 <div class="flex gap-3">
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">留言</span>
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">查看留言</span>
@@ -222,13 +229,13 @@
             </a>
 
             <!-- 6客服 -->
-            <a href="https://qm.qq.com/q/h0UMjQwT6g" class="block project-card bg-gray-50/30 rounded-3xl p-10 hover:bg-gray-100/50 transition-all cursor-pointer group fade-in">
-                <div class="flex justify-between items-start mb-12">
+            <a href="https://qm.qq.com/q/h0UMjQwT6g" class="block project-card bg-gray-50/30 rounded-3xl p-6 md:p-10 hover:bg-gray-100/50 transition-all cursor-pointer group fade-in">
+                <div class="flex justify-between items-start mb-8 md:mb-12">
                     <span class="text-[10px] tracking-widest text-gray-400">06 / KEFU</span>
                     <div class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
                 </div>
-                <h3 class="serif text-2xl mb-4 group-hover:text-blue-600 transition-colors duration-300">客服</h3>
-                <p class="text-gray-400 text-sm leading-relaxed mb-8">客服QQ（点击跳转）</p>
+                <h3 class="serif text-xl md:text-2xl mb-3 md:mb-4 group-hover:text-blue-600 transition-colors duration-300">客服</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 md:mb-8">客服QQ（点击跳转）</p>
                 <div class="flex gap-3">
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">客服</span>
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">QQ</span>
@@ -236,13 +243,13 @@
             </a>
 
             <!-- 7官方群 -->
-            <a href="https://qm.qq.com/q/bUQdkkXL8I" class="block project-card bg-gray-50/30 rounded-3xl p-10 hover:bg-gray-100/50 transition-all cursor-pointer group fade-in">
-                <div class="flex justify-between items-start mb-12">
+            <a href="https://qm.qq.com/q/bUQdkkXL8I" class="block project-card bg-gray-50/30 rounded-3xl p-6 md:p-10 hover:bg-gray-100/50 transition-all cursor-pointer group fade-in">
+                <div class="flex justify-between items-start mb-8 md:mb-12">
                     <span class="text-[10px] tracking-widest text-gray-400">07 / GUANFANGQUN</span>
                     <div class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
                 </div>
-                <h3 class="serif text-2xl mb-4 group-hover:text-blue-600 transition-colors duration-300">官方群</h3>
-                <p class="text-gray-400 text-sm leading-relaxed mb-8">官方QQ群（点击跳转）</p>
+                <h3 class="serif text-xl md:text-2xl mb-3 md:mb-4 group-hover:text-blue-600 transition-colors duration-300">官方群</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 md:mb-8">官方QQ群（点击跳转）</p>
                 <div class="flex gap-3">
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">官方群</span>
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">QQ群</span>
@@ -250,13 +257,13 @@
             </a>
 
             <!-- 8打赏 -->
-            <a href="https://i2.qyimage.store:2999/i/7c3e7b9a98d04d5e" class="block project-card bg-gray-50/30 rounded-3xl p-10 hover:bg-gray-100/50 transition-all cursor-pointer group fade-in">
-                <div class="flex justify-between items-start mb-12">
+            <a href="https://i2.qyimage.store:2999/i/7c3e7b9a98d04d5e" class="block project-card bg-gray-50/30 rounded-3xl p-6 md:p-10 hover:bg-gray-100/50 transition-all cursor-pointer group fade-in">
+                <div class="flex justify-between items-start mb-8 md:mb-12">
                     <span class="text-[10px] tracking-widest text-gray-400">08 / DASHUANG</span>
                     <div class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
                 </div>
-                <h3 class="serif text-2xl mb-4 group-hover:text-blue-600 transition-colors duration-300">打赏</h3>
-                <p class="text-gray-400 text-sm leading-relaxed mb-8">❤️感谢投喂❤️</p>
+                <h3 class="serif text-xl md:text-2xl mb-3 md:mb-4 group-hover:text-blue-600 transition-colors duration-300">打赏</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6 md:mb-8">❤️感谢投喂❤️</p>
                 <div class="flex gap-3">
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">打赏</span>
                     <span class="text-[9px] px-2 py-1 border border-gray-200 rounded text-gray-400 group-hover:border-blue-200 group-hover:text-blue-400">投喂</span>
@@ -267,8 +274,8 @@
     </section>
 
     <!-- 页脚 -->
-    <footer class="py-20 border-t border-gray-50 text-center">
-        <div class="flex justify-center gap-12 mb-8 text-[10px] tracking-[0.3em] text-gray-400 uppercase">
+    <footer class="py-16 md:py-20 border-t border-gray-50 text-center">
+        <div class="flex justify-center flex-wrap gap-6 md:gap-12 mb-6 md:mb-8 text-[10px] tracking-[0.3em] text-gray-400 uppercase px-4">
             <a href="https://blog.csdn.net/2601_96095812?spm=1010.2135.3001.5343" class="hover:text-black transition duration-300 relative group">
                 CSDN
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
@@ -278,11 +285,11 @@
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
             </a>
             <a href="#" class="hover:text-black transition duration-300 relative group">
-                联系邮箱
+                YOUXIANG
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
             </a>
         </div>
-        <p class="text-[10px] text-gray-300 tracking-widest">© 2026 LEIJIA. MZYGW ZYFX MZYTD.</p>
+        <p class="text-[10px] text-gray-300 tracking-widest px-2">© 2026 LEIJIA. MZYGW ZYFX MZYTD.</p>
     </footer>
 
     <script>
